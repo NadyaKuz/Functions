@@ -101,7 +101,7 @@ void shiftRight(int arr[], const int n)
 {
 	int j = 0;
 	int c;
-	cout << "Введите количество сдвигов в право: ";  cin >> c;
+	cout << "Введите количество сдвигов вправо: ";  cin >> c;
 	for (int j = 1; j <= c; j++)
 	{
 		int a;
@@ -123,7 +123,7 @@ void shiftRight(int arr[], const int n)
 void shiftLeft(int arr[], const int n)
 {
 	int с;
-	cout << "Введите количество сдвигов в лево: "; cin >> с;
+	cout << "Введите количество сдвигов влево: "; cin >> с;
 	for (int i = 0; i < с; i++)
 	{
 		int buffer = arr[0];
