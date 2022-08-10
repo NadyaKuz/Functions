@@ -1,4 +1,4 @@
-#include<iostream>
+Ôªø#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -22,10 +22,10 @@ void main()
 	Print(arr, n);
 	Sort(arr, n);
 	Print(arr, n);
-	cout << "—ÛÏÏ‡ ˝ÎÂÏÂÌÚÓ‚ Ï‡ÒÒË‚‡: " << Sum(arr, n) << endl;
-	cout << "—Â‰ÌÂÂ-‡ËÙÏÂÚË˜ÂÒÍÓÂ ˝ÎÂÏÂÌÚÓ‚ Ï‡ÒÒË‚‡: " << Avg(arr, n) << endl;
-	cout << "ÃËÌËÏÎ¸ÌÓÂ ÁÌ‡˜ÂÌËÂ ‚ Ï‡ÒÒË‚Â: " << minValueIn(arr, n) << endl;
-	cout << "Ã‡ÍÒËÏ‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ ‚ Ï‡ÒÒË‚Â: " << maxValueIn(arr, n) << endl;
+	cout << "–°—É–º–º–∞ —ç–ª–µ–º–µ–Ω—Ç–æ–≤ –º–∞—Å—Å–∏–≤–∞: " << Sum(arr, n) << endl;
+	cout << "–°—Ä–µ–¥–Ω–µ–µ-–∞—Ä–∏—Ñ–º–µ—Ç–∏—á–µ—Å–∫–æ–µ —ç–ª–µ–º–µ–Ω—Ç–æ–≤ –º–∞—Å—Å–∏–≤–∞: " << Avg(arr, n) << endl;
+	cout << "–ú–∏–Ω–∏–º–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –≤ –º–∞—Å—Å–∏–≤–µ: " << minValueIn(arr, n) << endl;
+	cout << "–ú–∞–∫—Å–∏–º–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –≤ –º–∞—Å—Å–∏–≤–µ: " << maxValueIn(arr, n) << endl;
 	shiftLeft(arr, n);
 	shiftRight(arr, n);
 	const int SIZE = 8;
@@ -101,7 +101,7 @@ void shiftRight(int arr[], const int n)
 {
 	int j = 0;
 	int c;
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰‚Ë„Ó‚ ‚ Ô‡‚Ó: ";  cin >> c;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–≤–∏–≥–æ–≤ –≤ –ø—Ä–∞–≤–æ: ";  cin >> c;
 	for (int j = 1; j <= c; j++)
 	{
 		int a;
@@ -122,9 +122,9 @@ void shiftRight(int arr[], const int n)
 }
 void shiftLeft(int arr[], const int n)
 {
-	int Ò;
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰‚Ë„Ó‚ ‚ ÎÂ‚Ó: "; cin >> Ò;
-	for (int i = 0; i < Ò; i++)
+	int —Å;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–≤–∏–≥–æ–≤ –≤ –ª–µ–≤–æ: "; cin >> —Å;
+	for (int i = 0; i < —Å; i++)
 	{
 		int buffer = arr[0];
 		for (int i = 0; i < n; i++)
