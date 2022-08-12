@@ -40,12 +40,12 @@ float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS);
 
 double Avg(int arr[], const int n);
 double Avg(double arr[], const int n);
-double Avg(char arr[], const int n);
-double Avg(float arr[], const int n);
+char Avg(char arr[], const int n);
+float Avg(float arr[], const int n);
 double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS);
 double Avg(double arr[ROWS][COLS], const int ROWS, const int COLS);
-double Avg(char arr[ROWS][COLS], const int ROWS, const int COLS);
-double Avg(float arr[ROWS][COLS], const int ROWS, const int COLS);
+char Avg(char arr[ROWS][COLS], const int ROWS, const int COLS);
+float Avg(float arr[ROWS][COLS], const int ROWS, const int COLS);
 
 int minValueIn(int arr[], const int n);
 double minValueIn(double arr[], const int n);
@@ -428,11 +428,11 @@ double Avg(double arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-double Avg(char arr[], const int n)
+char Avg(char arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-double Avg(float arr[], const int n)
+float Avg(float arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
@@ -444,11 +444,11 @@ double Avg(double arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	return (double)Sum(arr, ROWS, COLS) / (ROWS * COLS);
 }
-double Avg(char arr[ROWS][COLS], const int ROWS, const int COLS)
+char Avg(char arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	return (double)Sum(arr, ROWS, COLS) / (ROWS * COLS);
 }
-double Avg(float arr[ROWS][COLS], const int ROWS, const int COLS)
+float Avg(float arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	return (double)Sum(arr, ROWS, COLS) / (ROWS * COLS);
 }
