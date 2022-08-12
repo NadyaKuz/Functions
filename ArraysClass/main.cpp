@@ -40,8 +40,8 @@ float Sum(float arr[ROWS][COLS], const int ROWS, const int COLS);
 
 double Avg(int arr[], const int n);
 double Avg(double arr[], const int n);
-char Avg(char arr[], const int n);
-float Avg(float arr[], const int n);
+double Avg(char arr[], const int n);
+double Avg(float arr[], const int n);
 double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS);
 double Avg(double arr[ROWS][COLS], const int ROWS, const int COLS);
 char Avg(char arr[ROWS][COLS], const int ROWS, const int COLS);
@@ -101,6 +101,32 @@ void main()
 	shiftLeft(brr, SIZE);
 	shiftRight(brr, SIZE);
 
+	const int k = 3;
+	char crr[k];
+	FillRand(crr,k);
+	Print(crr, k);
+	Sort(crr, k);
+	Print(crr, k);
+	cout << "Сумма элементов массива: " << Sum(crr, k) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(crr, k) << endl;
+	cout << "Минимальное значение в массиве: " << minValueIn(crr, k) << endl;
+	cout << "Максимальное значение в массиве: " << maxValueIn(crr, k) << endl;
+	shiftLeft(crr, k);
+	shiftRight(crr, k);
+
+	const int l = 7;
+	float frr[l];
+	FillRand(frr, l);
+	Print(frr, l);
+	Sort(frr, l);
+	Print(frr, l);
+	cout << "Сумма элементов массива: " << Sum(frr, l) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(frr, l) << endl;
+	cout << "Минимальное значение в массиве: " << minValueIn(frr, l) << endl;
+	cout << "Максимальное значение в массиве: " << maxValueIn(frr, l) << endl;
+	shiftLeft(frr, l);
+	shiftRight(frr, l);
+
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
@@ -109,14 +135,32 @@ void main()
 	cout << "Минимальное значение в массиве: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
 
-	int d_arr_2[ROWS][COLS];
+	double d_arr_2[ROWS][COLS];
 	FillRand(d_arr_2, ROWS, COLS);
 	Print(d_arr_2, ROWS, COLS);
 	cout << "Сумма элементов массива: " << Sum(d_arr_2, ROWS, COLS) << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(d_arr_2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(d_arr_2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr_2, ROWS, COLS) << endl;
+
+	char c_arr_2[ROWS][COLS];
+	FillRand(c_arr_2, ROWS, COLS);
+	Print(c_arr_2, ROWS, COLS);
+	cout << "Сумма элементов массива: " << Sum(c_arr_2, ROWS, COLS) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(c_arr_2, ROWS, COLS) << endl;
+	cout << "Минимальное значение в массиве: " << minValueIn(c_arr_2, ROWS, COLS) << endl;
+	cout << "Максимальное значение в массиве: " << maxValueIn(c_arr_2, ROWS, COLS) << endl;
+
+	float f_arr_2[ROWS][COLS];
+	FillRand(f_arr_2, ROWS, COLS);
+	Print(f_arr_2, ROWS, COLS);
+	cout << "Сумма элементов массива: " << Sum(f_arr_2, ROWS, COLS) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(f_arr_2, ROWS, COLS) << endl;
+	cout << "Минимальное значение в массиве: " << minValueIn(f_arr_2, ROWS, COLS) << endl;
+	cout << "Максимальное значение в массиве: " << maxValueIn(f_arr_2, ROWS, COLS) << endl;
+
 }
+
 
 void FillRand(int arr[], const int n)
 {
@@ -428,11 +472,11 @@ double Avg(double arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-char Avg(char arr[], const int n)
+double Avg(char arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-float Avg(float arr[], const int n)
+double Avg(float arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
