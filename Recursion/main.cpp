@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void elevator(int floor);
@@ -13,7 +13,7 @@ void main()
 	setlocale(LC_ALL, "");
 	//cout << "Hello World";
 	int floor;
-	cout << "Ââåäèòå íîìåð ýòàæà: "; cin >> floor;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ð°Ð¶Ð°: "; cin >> floor;
 	elevator(floor);
 
 }
@@ -21,12 +21,12 @@ void elevator(int floor)
 {
 	if (floor == 0)
 	{
-		cout << "Âû â ïîäâàëå" << endl;
+		cout << "Ð’Ñ‹ Ð² Ð¿Ð¾Ð´Ð²Ð°Ð»Ðµ" << endl;
 		return;
 	}
-	cout << "Âû íà " << floor << " ýòàæå\n";
+	cout << "Ð’Ñ‹ Ð½Ð° " << floor << " ÑÑ‚Ð°Ð¶Ðµ\n";
 	elevator(floor - 1);
-	cout << "Âû íà " << floor << " ýòàæå\n";
+	cout << "Ð’Ñ‹ Ð½Ð° " << floor << " ÑÑ‚Ð°Ð¶Ðµ\n";
 }
 #endif // ELEVATOR
 
@@ -34,13 +34,13 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int N;
- cout << "Ââåäèòå öåëîå ÷èñëî äëÿ âû÷èñëåíèÿ ôàêòîðèàëà: "; cin >> N;
+ cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð´Ð»Ñ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð»Ð°: "; cin >> N;
  cout << fact(N) << endl;
 
 	int a;
 	int n;
-	cout << "Ââåäèòå îñíîâàíèå ñòåïåíè: "; cin >> a;
-	cout << "Ââåäèòå ïîêàçàòåëü ñòåïåíè: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> a;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> n;
 	cout << power(a, n) << endl;
 }
 int fact(int N)
